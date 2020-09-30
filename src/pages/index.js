@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout";
 import SimpleHero from "../components/SimpleHero";
 import Banner from "../components/Banner";
 import About from "../components/home/About";
+import Services from "../components/home/Services";
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
       </Banner>
     </SimpleHero>
     <About />
+    <Services />
   </Layout>
 );
 
