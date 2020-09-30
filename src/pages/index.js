@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout/Layout";
-import SEO from "../components/layout/Seo";
-
-import { FaAdobe } from "react-icons/fa";
+import SimpleHero from "../components/SimpleHero";
+import Banner from "../components/Banner";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>
-      <FaAdobe />
-      Hi people from IGOR HRISTOV
-    </h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <SimpleHero>
+      <Banner title="Hi, i am Igor Hristov" info="Web Developer">
+        <Link to="/tour" className="btn-white">
+          See my project
+        </Link>
+      </Banner>
+    </SimpleHero>
   </Layout>
 );
 
