@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/Layout";
 import SimpleHero from "../components/SimpleHero";
 import Banner from "../components/Banner";
+import About from "../components/home/About";
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
         </Link>
       </Banner>
     </SimpleHero>
+    <About />
   </Layout>
 );
 
