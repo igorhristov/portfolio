@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styles from "../../css/navbar.module.css";
 import { FaAlignRight } from "react-icons/fa";
-import NavbarLinks11 from "../../constants/links";
+import NavbarLinks from "../../constants/links";
 import SocialIcons from "../../constants/social-icons";
 
 import logo from "../../images/igor.svg";
@@ -30,12 +29,13 @@ const Navbar = () => {
               : `${styles.navLinks}`
           }
         >
-          {NavbarLinks11.map(({ title, path }) => (
+          {NavbarLinks.map(({ title, path }) => (
             <li key={title}>
-              <Link to={path}>{title.toUpperCase()}</Link>
+              <AniLink fade  to={path}>{title.toUpperCase()}</AniLink>
             </li>
           ))}
         </ul>
+
         <div className={styles.navSocialLinks}>
           {SocialIcons.map((item, index) => {
             return (
@@ -55,25 +55,5 @@ const Navbar = () => {
   );
 };
 
-const NavbarLinks = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/about",
-    title: "About",
-  },
-  {
-    path: "/blog",
-    title: "Blog",
-  },
-  {
-    path: "/contact",
-    title: "Contact",
-  },
-];
-
-Navbar.propTypes = {};
 
 export default Navbar;

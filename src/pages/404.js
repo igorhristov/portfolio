@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import SEO from "../components/layout/Seo";
 import Layout from "../components/layout/Layout";
 import styles from "../css/error.module.css";
@@ -13,10 +14,10 @@ const NotFoundPage = () => (
         title="404: Not Found"
         info="You just hit a route that doesn&#39;t exist... the sadness."
       >
-        <Link to="/" className="btn-white">
+        <AniLink fade to="/" className="btn-white">
           {" "}
           back to home page
-        </Link>
+        </AniLink>
       </Banner>
     </header>
     <p></p>

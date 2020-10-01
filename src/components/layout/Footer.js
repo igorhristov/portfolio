@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styles from "../../css/footer.module.css";
 import links from "../../constants/links";
 import SocialIcons from "../../constants/social-icons";
@@ -10,9 +10,24 @@ const Footer = () => {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <Link key={index} to={item.path}>
+            <AniLink
+              cover
+              direction="left"
+              duration={2}
+              bg="
+      url(https://source.unsplash.com/random)
+      center / cover   /* position / size */
+      no-repeat        /* repeat */
+      fixed            /* attachment */
+      padding-box      /* origin */
+      content-box      /* clip */
+      white            /* color */
+    "
+              key={index}
+              to={item.path}
+            >
               {item.title}
-            </Link>
+            </AniLink>
           );
         })}
       </div>
