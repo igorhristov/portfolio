@@ -9,10 +9,11 @@ export default [
   },
   {
     path: "/blog",
-    title: "Blog",
+    title: "blog",
   },
+ 
   {
     path: "/contact",
-    title: "Contact",
+    title: "contact",
   },
 ];

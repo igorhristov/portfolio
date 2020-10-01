@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SimpleHero>
       <Banner title="Hi, i am Igor Hristov" info="Web Developer">
-        <Link to="/tour" className="btn-white">
+        <Link to="/tours" className="btn-white">
           See my project
         </Link>
       </Banner>
