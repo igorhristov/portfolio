@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Igor Hristov Profile`,
+    description: `Explore awesome projects i made.`,
+    author: `@igorhristov`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,13 +29,15 @@ module.exports = {
     },
 
     // gatsby-plugin-styled-components
-
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
       },
     },
+
+    //gatsby-plugin-playground
+    `gatsby-plugin-playground`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
