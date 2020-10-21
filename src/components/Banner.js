@@ -12,6 +12,9 @@ const Banner = ({ title, info, children }) => {
   );
 };
 
-Banner.propTypes = {};
+Banner.propTypes = {
+  title: PropTypes.string,
+  info: PropTypes.string,
+};
 
 export default Banner;
