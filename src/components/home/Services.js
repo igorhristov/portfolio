@@ -30,7 +30,7 @@ const SevicesWrapper = styled.section`
     width: 80vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     grid-column-gap: 2rem;
   }
 
@@ -48,6 +48,23 @@ const SevicesWrapper = styled.section`
 
     h4 {
       text-transform: uppercase;
+    }
+
+
+  }
+
+  @media (min-width: 768px) {
+    .center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .center {
+      max-width: 1170px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 `;

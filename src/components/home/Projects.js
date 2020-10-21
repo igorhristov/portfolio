@@ -21,41 +21,89 @@ const Projects = () => {
   return (
     <ProjectsWrapper>
       <Title title="My" subtitle="Projects" />
-      <div className="projects-center">
-        <article className="projects-img">
-          <div className="img-container">
-            <Image
-              fluid={projectsImages.childImageSharp.fluid}
-              alt="projects"
-            />
-          </div>
-        </article>
-        <article className="projects-info">
-          <h4>react </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            rutrum commodo tellus. Maecenas congue aliquet eros vel fermentum.
-            Vestibulum vel rutrum massa, non tempor tellus. Cras posuere nibh at
-            nisi tempor ultricies.Nulla congue tristique sodales. Cras rhoncus
-            erat sapien, sed porta enim euismod ege
-          </p>
-          <div style={{ display: "flex" }}>
-            <a
-              href="https://react-blog-igor.herokuapp.com/"
-              className="btn-primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live
-            </a>
-          </div>
-        </article>
-      </div>
+      <section>
+        <div className="projects-center">
+          <article className="projects-img">
+            <div className="img-container">
+              <Image
+                fluid={projectsImages.childImageSharp.fluid}
+                alt="projects"
+              />
+            </div>
+          </article>
+          <article className="projects-info">
+            <h4>react app</h4>
+            <p>React Application with node js and express Rest full API</p>
+            <div style={{ display: "flex" }}>
+              <a
+                href="https://react-blog-igor.herokuapp.com/"
+                className="btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div className="projects-center">
+          <article className="projects-img">
+            <div className="img-container">
+              <Image
+                fluid={projectsImages.childImageSharp.fluid}
+                alt="projects"
+              />
+            </div>
+          </article>
+          <article className="projects-info">
+            <h4>PSD to HTML Page </h4>
+            <p>Convert psd file to html </p>
+            <div style={{ display: "flex" }}>
+              <a
+                href="https://igor-psd-to-html.netlify.app/"
+                className="btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div className="projects-center">
+          <article className="projects-img">
+            <div className="img-container">
+              <Image
+                fluid={projectsImages.childImageSharp.fluid}
+                alt="projects"
+              />
+            </div>
+          </article>
+          <article className="projects-info">
+            <h4>Tribute Page </h4>
+            <p>Tribute Page for George Lucas made from my own design</p>
+            <div style={{ display: "flex" }}>
+              <a
+                href="https://igortributepage.netlify.app/"
+                className="btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
     </ProjectsWrapper>
   );
 };
 
-const ProjectsWrapper = styled.section`
+const ProjectsWrapper = styled.div`
   padding: 4rem 0;
 
   .projects-center {
