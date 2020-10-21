@@ -18,7 +18,7 @@ const Blog = ({ data }) => {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "contactBg.jpg" }) {
+    file(relativePath: { eq: "laptop.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

@@ -7,6 +7,7 @@ import Banner from "../components/Banner";
 import About from "../components/home/About";
 import Services from "../components/home/Services";
 import StyledHero from "../components/StyledHero";
+import Projects from "../components/home/Projects";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -34,6 +35,7 @@ const IndexPage = ({ data }) => (
     </StyledHero>
     <About />
     <Services />
+    <Projects/>
   </Layout>
 );
 

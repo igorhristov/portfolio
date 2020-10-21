@@ -1,13 +1,13 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Image from "gatsby-image";
 import Title from "../Title";
 import styled from "styled-components";
-import img from "../../images/defaultBcg.jpg";
 
 const getAboutImage = graphql`
   query aboutImage {
-    aboutImage: file(relativePath: { eq: "defaultBcg.jpg" }) {
+    aboutImage: file(relativePath: { eq: "coding.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -36,21 +36,16 @@ const About = () => {
         <article className="about-info">
           <h4>some hystory about me </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            rutrum commodo tellus. Maecenas congue aliquet eros vel fermentum.
-            Vestibulum vel rutrum massa, non tempor tellus. Cras posuere nibh at
-            nisi tempor ultricies.Nulla congue tristique sodales. Cras rhoncus
-            erat sapien, sed porta enim euismod eget.{" "}
+            Highly motivated and enthusiastic web developer who always want to
+            learn more and something new. Over 2 years learning with passion
+            HTML, CSS, Bootstrap, JavaScript, and doing personal
+            projects.Seeking to learn as much as i can to become the next Full
+            Stack Web Developer.
           </p>
-          <p>
-            Aenean eleifend sapien ac dignissim maximus. Morbi sed ipsum est.
-            Duis quis felis ornare, malesuada lorem at, sodales nisl. Vivamus
-            laoreet aliquam hendrerit. Maecenas at massa non erat interdum
-            molestie vel non metus. Duis ullamcorper, turpis non mattis iaculis,
-            risus et dictum varius, risus enim pulvinar ligula, et fermentum
-            velit dolor eu ex.{" "}
-          </p>
-          <button className="btn-primary">Read more</button>
+         
+          <AniLink fade to="/about" className="btn-primary">
+            Read more
+          </AniLink>
         </article>
       </div>
     </AboutWrapper>
