@@ -13,20 +13,20 @@ const IndexPage = ({ data }) => (
     <StyledHero home="true" img={data.file.childImageSharp.fluid}>
       <Banner title="Hi, i am Igor Hristov" info="Web Developer">
         <AniLink
-          to="/tours"
+          to="/projects"
           className="btn-white"
           cover
           direction="left"
           duration={3}
           bg="
-    url(https://source.unsplash.com/random)
-    center / cover   /* position / size */
-    no-repeat        /* repeat */
-    fixed            /* attachment */
-    padding-box      /* origin */
-    content-box      /* clip */
-    white            /* color */
-  "
+              url(https://source.unsplash.com/random)
+              center / cover  
+              no-repeat       
+              fixed          
+              padding-box      
+              content-box     
+              white            
+              "
         >
           See my projects
         </AniLink>

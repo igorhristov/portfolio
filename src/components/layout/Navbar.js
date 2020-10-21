@@ -5,7 +5,7 @@ import { FaAlignRight } from "react-icons/fa";
 import NavbarLinks from "../../constants/links";
 import SocialIcons from "../../constants/social-icons";
 
-import logo from "../../images/igor.svg";
+import logo from "../../images/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false);
