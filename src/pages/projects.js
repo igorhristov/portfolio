@@ -1,17 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import Layout from "../components/layout/Layout";
 import Header from "../examples/Header";
 
-const tour = (props) => {
+const Projects = () => {
   return (
     <Layout>
-      hello from tours page
+      hello from projects page
       <Header />
     </Layout>
   );
 };
 
-tour.propTypes = {};
-
-export default tour;
+export default Projects;

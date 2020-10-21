@@ -8,7 +8,9 @@ const About = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.file.childImageSharp.fluid}>
-        <Banner title="about page"></Banner>
+        <Banner title="about page"
+        info="helo"
+        ></Banner>
       </StyledHero>
       <h1>About page</h1>
     </Layout>

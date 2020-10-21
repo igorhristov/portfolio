@@ -6,10 +6,10 @@
 */
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #00C3C3;
   --mainWhite: white;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
+  --mainBlack: #1F425E;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
