@@ -1,15 +1,14 @@
 import React from "react";
-
 import Layout from "../components/layout/Layout";
-import Header from "../examples/Header";
+import Projects from "../components/home/Projects";
 
-const Projects = () => {
+
+const ProjectsPage = () => {
   return (
     <Layout>
-      hello from projects page
-      <Header />
+      <Projects/>
     </Layout>
   );
 };
 
-export default Projects;
+export default ProjectsPage;

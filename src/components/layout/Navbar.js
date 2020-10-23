@@ -17,7 +17,9 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img src={logo} alt="igor logo" style={{ width: "100px" }} />
+          <AniLink fade to="/">
+            <img src={logo} alt="igor logo" style={{ width: "100px" }} />
+          </AniLink>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
@@ -31,7 +33,9 @@ const Navbar = () => {
         >
           {NavbarLinks.map(({ title, path }) => (
             <li key={title}>
-              <AniLink fade  to={path}>{title.toUpperCase()}</AniLink>
+              <AniLink fade to={path}>
+                {title.toUpperCase()}
+              </AniLink>
             </li>
           ))}
         </ul>
@@ -54,6 +58,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;

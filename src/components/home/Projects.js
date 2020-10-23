@@ -1,104 +1,81 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
-import Image from "gatsby-image";
 import Title from "../Title";
+import ProjectImg from "../Image/ProjectImg";
 
-const getProjectImage = graphql`
-  query projectImage {
-    projectsImages: file(relativePath: { eq: "laptop.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`;
+const SingleProject = ({ imgName, imgAlt, title, info, liveUrl, codeUrl }) => {
+  return (
+    <section>
+      <div className="projects-center">
+        <article className="projects-img">
+          <div className="img-container">
+            <ProjectImg filename={imgName} alt={imgAlt} />
+          </div>
+        </article>
+        <article className="projects-info">
+          <h4>{title}</h4>
+          <p>{info}</p>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <a
+              href={liveUrl}
+              className="btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+            {codeUrl ? (
+              <a
+                className="btn-code"
+                href={codeUrl}
+                // className="btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+};
+
+const ProjectsData = [
+  {
+    imgName: "laptop.jpg",
+    imgAlt: "react project",
+    title: "react app",
+    info: "React Application with node js and express Rest full API",
+    liveUrl: "https://react-blog-igor.herokuapp.com/",
+  },
+  {
+    imgName: "coding.png",
+    imgAlt: "psd to html project",
+    title: "PSD to HTML Page",
+    info: "Convert psd file to html web page with corensponding css styles",
+    liveUrl: "https://igor-psd-to-html.netlify.app/",
+    codeUrl: "https://github.com/igorhristov/homework-7",
+  },
+  {
+    imgName: "backgroundCoding.jpg",
+    imgAlt: "george lucas tribute page",
+    title: "Tribute Page",
+    info: "Tribute Page for George Lucas made with my own design",
+    liveUrl: "https://igor-tribute-page.netlify.app/",
+  },
+];
 
 const Projects = () => {
-  const { projectsImages } = useStaticQuery(getProjectImage);
   return (
     <ProjectsWrapper>
       <Title title="My" subtitle="Projects" />
-      <section>
-        <div className="projects-center">
-          <article className="projects-img">
-            <div className="img-container">
-              <Image
-                fluid={projectsImages.childImageSharp.fluid}
-                alt="projects"
-              />
-            </div>
-          </article>
-          <article className="projects-info">
-            <h4>react app</h4>
-            <p>React Application with node js and express Rest full API</p>
-            <div style={{ display: "flex" }}>
-              <a
-                href="https://react-blog-igor.herokuapp.com/"
-                className="btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div className="projects-center">
-          <article className="projects-img">
-            <div className="img-container">
-              <Image
-                fluid={projectsImages.childImageSharp.fluid}
-                alt="projects"
-              />
-            </div>
-          </article>
-          <article className="projects-info">
-            <h4>PSD to HTML Page </h4>
-            <p>Convert psd file to html </p>
-            <div style={{ display: "flex" }}>
-              <a
-                href="https://igor-psd-to-html.netlify.app/"
-                className="btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div className="projects-center">
-          <article className="projects-img">
-            <div className="img-container">
-              <Image
-                fluid={projectsImages.childImageSharp.fluid}
-                alt="projects"
-              />
-            </div>
-          </article>
-          <article className="projects-info">
-            <h4>Tribute Page </h4>
-            <p>Tribute Page for George Lucas made from my own design</p>
-            <div style={{ display: "flex" }}>
-              <a
-                href="https://igortributepage.netlify.app/"
-                className="btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+      {ProjectsData.map(({ ...projects }) => (
+        <SingleProject {...{ ...projects }} />
+      ))}
     </ProjectsWrapper>
   );
 };
