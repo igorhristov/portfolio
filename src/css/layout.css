@@ -6,11 +6,11 @@
 */
 
 :root {
-  --primaryColor: #00C3C3;
+  --primaryColor: #00c3c3;
   --mainWhite: white;
   --offWhite: #f7f7f7;
-  --mainBlack: #1F425E;
-  --mainGrey: #F7F7F7;
+  --mainBlack: #1f425e;
+  --mainGrey: #f7f7f7;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 4px;
@@ -61,11 +61,9 @@ p {
 
 .defaultHero {
   min-height: calc(100vh - 62px);
- 
+
   background-color: #fbb034;
-background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-
-
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 
   /* background: linear-gradient(rgba(232, 248, 0, 0.7), rgba(238, 183, 0, 0.7)),
     url("../images/defaultBcg.jpg") center/cover no-repeat; */
@@ -85,6 +83,22 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+}
+
+.btn-code {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  color: var(--primaryColor);
+  padding: 0.9rem 1.6rem;
+  opacity: 1;
+
+}
+.btn-code:hover {
+  opacity: 0.7;
+
 }
 
 .btn-white:hover {

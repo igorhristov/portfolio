@@ -10,8 +10,8 @@ export default [
   },
 
   {
-    path: "/blog",
-    title: "blog",
+    path: "/projects",
+    title: "projects",
   },
 
   {
