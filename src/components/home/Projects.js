@@ -46,22 +46,30 @@ const SingleProject = ({ imgName, imgAlt, title, info, liveUrl, codeUrl }) => {
 
 const ProjectsData = [
   {
-    imgName: "laptop.jpg",
+    imgName: "react.png",
     imgAlt: "react project",
     title: "react app",
     info: "React Application with node js and express Rest full API",
     liveUrl: "https://react-blog-igor.herokuapp.com/",
   },
   {
-    imgName: "coding.png",
+    imgName: "beauty.png",
+    imgAlt: "beauty website",
+    title: "Beauty App",
+    info: "Client website for Beauty Salon",
+    liveUrl: "https://ritualbeauty.netlify.app/",
+  },
+  {
+    imgName: "psdtohtml.png",
     imgAlt: "psd to html project",
     title: "PSD to HTML Page",
     info: "Convert psd file to html web page with corensponding css styles",
     liveUrl: "https://igor-psd-to-html.netlify.app/",
     codeUrl: "https://github.com/igorhristov/homework-7",
   },
+
   {
-    imgName: "backgroundCoding.jpg",
+    imgName: "tribute.jpg",
     imgAlt: "george lucas tribute page",
     title: "Tribute Page",
     info: "Tribute Page for George Lucas made with my own design",
@@ -74,7 +82,17 @@ const Projects = () => {
     <ProjectsWrapper>
       <Title title="My" subtitle="Projects" />
       {ProjectsData.map(({ ...projects }) => (
-        <SingleProject {...{ ...projects }} />
+        <>
+          <SingleProject {...{ ...projects }} />
+          <hr
+            style={{
+              width: "90%",
+              margin: "1rem auto",
+              border: "1px dotted #00C3C3",
+              opacity: "0.5"
+            }}
+          />
+        </>
       ))}
     </ProjectsWrapper>
   );
