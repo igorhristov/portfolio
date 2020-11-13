@@ -4,10 +4,10 @@ export default [
     title: "Home",
   },
 
-  {
-    path: "/about",
-    title: "About",
-  },
+  // {
+  //   path: "/about",
+  //   title: "About",
+  // },
 
   {
     path: "/projects",
