@@ -3,13 +3,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import StyledHero from "../components/StyledHero";
 import ContactComponent from "../components/contact/Contact";
-import SEO from "../components/layout/SEO";
+//import SEO from "../components/layout/SEO";
 
 const Contact = ({ data }) => {
-  console.log("hello from contanct");
+  
   return (
     <>
-      <SEO title="Contact" image="logo.svg" />
+     
       <Layout>
         <StyledHero img={data.file.childImageSharp.fluid} />
         <ContactComponent />
