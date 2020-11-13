@@ -75,6 +75,13 @@ const ProjectsData = [
     info: "Tribute Page for George Lucas made with my own design",
     liveUrl: "https://igor-tribute-page.netlify.app/",
   },
+  {
+    imgName: "elements.png",
+    imgAlt: "igor utility page",
+    title: "Utility Elements Page",
+    info: "Collection of Snipets of difrent elements and small projects with HTML5/CSS3, JavaScript and React",
+    liveUrl: "https://igor-utility.netlify.app/",
+  },
 ];
 
 const Projects = () => {

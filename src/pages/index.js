@@ -11,7 +11,7 @@ import Projects from "../components/home/Projects";
 const IndexPage = ({ data }) => (
   <Layout>
     <StyledHero home="true" img={data.file.childImageSharp.fluid}>
-      <Banner title="Hi, i am Igor Hristov" info="Web Developer">
+      <Banner title="Hi, i am " name="Igor Hristov" info="Web Developer">
         <AniLink
           to="/projects"
           className="btn-white"
@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => (
     </StyledHero>
     <About />
     <Services />
-    <Projects/>
+    <Projects />
   </Layout>
 );
 

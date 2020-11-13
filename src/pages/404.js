@@ -1,27 +1,38 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
-import SEO from "../components/layout/Seo";
-import Layout from "../components/layout/Layout";
-import styles from "../css/error.module.css";
 import Banner from "../components/Banner";
+import styled from "styled-components";
+import SEO from "../components/layout/SEO";
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <header className={styles.error}>
+  <>
+    <SEO title="404: Not Found" />
+    <ErrorWrapper>
       <Banner
-        title="404: Not Found"
-        info="You just hit a route that doesn&#39;t exist... the sadness."
+        name="404: Not Found"
+        info="You just hit a route that doesn&#39;t exist..."
       >
         <AniLink fade to="/" className="btn-white">
           {" "}
           back to home page
         </AniLink>
       </Banner>
-    </header>
-    <p></p>
-  </Layout>
+    </ErrorWrapper>
+  </>
 );
+
+const ErrorWrapper = styled.div`
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  min-height: calc(100vh - 62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  p {
+    margin: 0 auto 20px;
+  }
+`;
 
 export default NotFoundPage;

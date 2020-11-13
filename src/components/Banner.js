@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../css/banner.module.css";
+import styled from "styled-components";
 
-const Banner = ({ title, info, children }) => {
+const Banner = ({ title, info, children, name }) => {
   return (
-    <div className={styles.banner}>
-      <h1>{title}</h1>
+    <BannerWrapper>
+      <h1>
+        {title} <span className="mark">{name}</span>
+      </h1>
       <p>{info}</p>
       {children}
-    </div>
+    </BannerWrapper>
   );
 };
 
@@ -16,5 +18,40 @@ Banner.propTypes = {
   title: PropTypes.string,
   info: PropTypes.string,
 };
+
+const BannerWrapper = styled.div`
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+
+  h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    letter-spacing: 6px;
+    color: var(--primaryColor);
+  }
+
+  .mark {
+    color: var(--mainWhite);
+  }
+
+  p {
+    font-size: 2rem;
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    p {
+      width: 70%;
+    }
+  }
+`;
 
 export default Banner;
