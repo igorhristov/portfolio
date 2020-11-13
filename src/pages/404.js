@@ -2,11 +2,11 @@ import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Banner from "../components/Banner";
 import styled from "styled-components";
-import SEO from "../components/layout/SEO";
+// import SEO from "../components/layout/SEO";
 
 const NotFoundPage = () => (
   <>
-    <SEO title="404: Not Found" />
+    {/* <SEO title="404: Not Found" /> */}
     <ErrorWrapper>
       <Banner
         name="404: Not Found"

@@ -7,8 +7,11 @@ import About from "../components/home/About";
 import Services from "../components/home/Services";
 import StyledHero from "../components/StyledHero";
 import Projects from "../components/home/Projects";
+import SEO from "../components/layout/SEO";
 
 const IndexPage = ({ data }) => (
+  <>
+  <SEO title="Hello World"/>
   <Layout>
     <StyledHero home="true" img={data.file.childImageSharp.fluid}>
       <Banner title="Hi, i am " name="Igor Hristov" info="Web Developer">
@@ -36,6 +39,7 @@ const IndexPage = ({ data }) => (
     <Services />
     <Projects />
   </Layout>
+  </>
 );
 
 export const query = graphql`

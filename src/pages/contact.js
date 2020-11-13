@@ -8,11 +8,13 @@ import SEO from "../components/layout/SEO";
 const Contact = ({ data }) => {
   console.log("hello from contanct");
   return (
-    <Layout>
-      <SEO title="Contact" image='logo.svg'/>
-      <StyledHero img={data.file.childImageSharp.fluid} />
-      <ContactComponent />
-    </Layout>
+    <>
+      <SEO title="Contact" image="logo.svg" />
+      <Layout>
+        <StyledHero img={data.file.childImageSharp.fluid} />
+        <ContactComponent />
+      </Layout>
+    </>
   );
 };
 
