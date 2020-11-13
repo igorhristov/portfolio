@@ -5,10 +5,12 @@ import SEO from "../components/layout/SEO";
 
 const ProjectsPage = () => {
   return (
-    <Layout>
+    <>
       <SEO title="My Projects" />
-      <Projects />
-    </Layout>
+      <Layout>
+        <Projects />
+      </Layout>
+    </>
   );
 };
 
