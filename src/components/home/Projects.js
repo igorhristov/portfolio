@@ -56,8 +56,8 @@ const ProjectsData = [
     imgName: "beauty.png",
     imgAlt: "beauty website",
     title: "Beauty App",
-    info: "Client website for Beauty Salon",
-    liveUrl: "https://ritualbeauty.netlify.app/",
+    info: "Beauty Salon website for a client",
+    liveUrl: "https://ritual.mk/",
   },
   {
     imgName: "psdtohtml.png",
@@ -78,8 +78,8 @@ const ProjectsData = [
   {
     imgName: "elements.png",
     imgAlt: "igor utility page",
-    title: "Utility Elements Page",
-    info: "Collection of Snipets of difrent elements and small projects with HTML5/CSS3, JavaScript and React",
+    title: "Elements & Small Projects",
+    info: "Collection of elements and small projects with HTML5/CSS3, JavaScript and React",
     liveUrl: "https://igor-utility.netlify.app/",
   },
 ];

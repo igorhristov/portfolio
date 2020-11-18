@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 const NotFoundPage = () => (
   <>
-    {/* <SEO title="404: Not Found" /> */}
     <ErrorWrapper>
       <Banner
         name="404: Not Found"
