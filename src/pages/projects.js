@@ -6,7 +6,6 @@ import Projects from "../components/home/Projects";
 const ProjectsPage = () => {
   return (
     <>
-     
       <Layout>
         <Projects />
       </Layout>

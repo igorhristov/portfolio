@@ -11,7 +11,6 @@ import Projects from "../components/home/Projects";
 
 const IndexPage = ({ data }) => (
   <>
- 
   <Layout>
     <StyledHero home="true" img={data.file.childImageSharp.fluid}>
       <Banner title="Hi, i am " name="Igor Hristov" info="Web Developer">
