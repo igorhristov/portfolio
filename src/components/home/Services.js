@@ -40,10 +40,13 @@ const SevicesWrapper = styled.section`
 
     span {
       background: var(--primaryColor);
-      padding: 0.5rem;
+      padding: 5px 12px 0px;
       display: inline-block;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
+      color: white;
+      border-radius: 4px;
+      box-shadow: 4px 6px 3px rgba(0,0,0,0.2);
     }
 
     h4 {

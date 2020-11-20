@@ -2,10 +2,10 @@ import React from "react";
 
 import {
   FaReact,
-  FaTerminal,
+  FaCode,
   FaNodeJs,
   FaHtml5,
-  FaChrome,
+  FaLaptopCode
 } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 
@@ -17,7 +17,7 @@ export default [
       "I can turn your designs into web standards compliant HTML5/CSS3 package. I am also doing JavaScript development. I create code according to W3C standards, and my markup is displayed correctly in all popular modern browsers.",
   },
   {
-    icon: <FaTerminal />,
+    icon: <FaCode />,
     title: "Front-end Development",
     text:
       "Whether you’re looking for an external development partner, or expert developers to integrate with your in-house team, i will provide the right talent for your project. I as  front-end developer can not only supply technical expertise, but make sure your project is done the right way.",
@@ -43,7 +43,7 @@ export default [
   },
 
   {
-    icon: <FaChrome />,
+    icon: <FaLaptopCode />,
     title: "Web App Development",
     text:
       "Use all the blessings of modern web technology to achieve your goals easier and more efficiently. Web App Development is here to level up your business.",

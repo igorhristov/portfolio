@@ -1,9 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Image from "gatsby-image";
 import Title from "../Title";
-import styled from "styled-components";
+import Githubchart from "../github/githubcontibution";
 
 const getAboutImage = graphql`
   query aboutImage {
@@ -34,15 +35,19 @@ const About = () => {
         </article>
 
         <article className="about-info">
-          <h4>some hystory about me </h4>
+          <h4>something about me </h4>
           <p>
             Highly motivated and enthusiastic web developer who always want to
             learn more and something new. Over 2 years learning with passion
-            HTML, CSS, Bootstrap, JavaScript, and doing personal
-            projects.Seeking to learn as much as i can to become the next Full
+            HTML, CSS, Bootstrap, JavaScript, Node, Express, React, MongoDB, Gatsby and headless CMS and doing personal
+            projects. Seeking to learn as much as i can to become the next Full
             Stack Web Developer.
           </p>
-         
+          <p>
+            <a href="https://github.com/igorhristov" target="_blank" rel="noreferrer">@igorhristov</a> on GitHub
+            <Githubchart />
+          </p>
+
           <AniLink fade to="/about" className="btn-primary">
             Read more
           </AniLink>
