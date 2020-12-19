@@ -30,11 +30,12 @@ const BannerWrapper = styled.div`
     margin-bottom: 2rem;
     padding: 0 1rem;
     letter-spacing: 6px;
-    color: var(--primaryColor);
+    color: var(--mainWhite);
   }
 
   .mark {
-    color: var(--mainWhite);
+    color: var(--primaryColor);
+    text-shadow: 3px 3px 2px black;
   }
 
   p {

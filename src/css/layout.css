@@ -108,16 +108,16 @@ p {
 }
 
 .btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  background: var(--mainWhite);
+  color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background: transparent;
-  color: var(--primaryColor);
-  box-shadow: inset 200px 0 5px 0 white;
+  color: var(--mainWhite);
+  box-shadow: inset 200px 0 5px 0 var(--primaryColor);
 }
 
 .gatsby-image-wrapper {
