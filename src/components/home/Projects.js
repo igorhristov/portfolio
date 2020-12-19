@@ -53,6 +53,13 @@ const ProjectsData = [
     liveUrl: "https://react-blog-igor.herokuapp.com/",
   },
   {
+    imgName: "kancona.jpg",
+    imgAlt: "restaurant website",
+    title: "Restaurant App",
+    info: "Restaurant website for a client",
+    liveUrl: "https://kancona.netlify.app/",
+  },
+  {
     imgName: "beauty.png",
     imgAlt: "beauty website",
     title: "Beauty App",

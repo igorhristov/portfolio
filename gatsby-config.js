@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Igor Hristov Profile`,
-    description: `Explore awesome projects i made.`,
+    description: `Explore some of my projects i made.`,
     author: `@igorhristov`,
   },
   plugins: [
@@ -39,9 +39,6 @@ module.exports = {
         // Add any options here
       },
     },
-
-    //gatsby-plugin-playground
-    `gatsby-plugin-playground`,
 
     //gatsby-plugin-transition-link
     "gatsby-plugin-transition-link",
