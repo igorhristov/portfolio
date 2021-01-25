@@ -57,7 +57,7 @@ const ProjectsData = [
     imgAlt: "restaurant website",
     title: "Restaurant App",
     info: "Restaurant website for a client",
-    liveUrl: "https://kancona.netlify.app/",
+    liveUrl: "https://kancona.mk/",
   },
   {
     imgName: "beauty.png",
