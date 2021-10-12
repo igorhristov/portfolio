@@ -7,20 +7,23 @@ import About from "../components/home/About";
 import Services from "../components/home/Services";
 import StyledHero from "../components/StyledHero";
 import Projects from "../components/home/Projects";
-//import SEO from "../components/layout/SEO";
+import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => (
   <>
-  <Layout>
-    <StyledHero home="true" img={data.file.childImageSharp.fluid}>
-      <Banner title="Hi, i am " name="Igor Hristov" info="Web Developer">
-        <AniLink
-          to="/projects"
-          className="btn-white"
-          cover
-          direction="left"
-          duration={3}
-          bg="
+    <Helmet>
+      <title>Igor Portfolio</title>
+    </Helmet>
+    <Layout>
+      <StyledHero home="true" img={data.file.childImageSharp.fluid}>
+        <Banner title="Hi, i am " name="Igor Hristov" info="Web Developer">
+          <AniLink
+            to="/projects"
+            className="btn-white"
+            cover
+            direction="left"
+            duration={3}
+            bg="
               url(https://source.unsplash.com/random)
               center / cover  
               no-repeat       
@@ -29,15 +32,15 @@ const IndexPage = ({ data }) => (
               content-box     
               white            
               "
-        >
-          See my projects
-        </AniLink>
-      </Banner>
-    </StyledHero>
-    <About />
-    <Services />
-    <Projects />
-  </Layout>
+          >
+            See my projects
+          </AniLink>
+        </Banner>
+      </StyledHero>
+      <About />
+      <Services />
+      <Projects />
+    </Layout>
   </>
 );
 

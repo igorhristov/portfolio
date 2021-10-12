@@ -5,28 +5,38 @@ import Layout from "../components/layout/Layout";
 import StyledHero from "../components/StyledHero";
 import Title from "../components/Title";
 import Image from "gatsby-image";
-
+import { Helmet } from "react-helmet";
 import CV from "../../static/IgorHristovCV.pdf";
+
 const About = ({ data, className }) => {
   return (
-    <Layout>
-      <StyledHero img={data.file.childImageSharp.fluid} />
+    <>
+      <Helmet>
+        <title>Igor Portfolio | CV</title>
+      </Helmet>
+      <Layout>
+        <StyledHero img={data.file.childImageSharp.fluid} />
 
-      <div className={className}>
-        <Title title="preview my" subtitle="CV" />
+        <div className={className}>
+          <Title title="preview my" subtitle="CV" />
 
-        <a
-          className="btn-primary"
-          download="IgorHristovCV.pdf"
-          href="/IgorHristovCV.pdf"
-        >
-          Download
-        </a>
-        <div style={{ marginTop: "2rem" }}>
-          <Image fluid={data.cv.childImageSharp.fluid} alt="cv" style={{margin: '0 auto'}} />
+          <a
+            className="btn-primary"
+            download="IgorHristovCV.pdf"
+            href="/IgorHristovCV.pdf"
+          >
+            Download
+          </a>
+          <div style={{ marginTop: "2rem" }}>
+            <Image
+              fluid={data.cv.childImageSharp.fluid}
+              alt="cv"
+              style={{ margin: "0 auto" }}
+            />
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

@@ -57,7 +57,7 @@ const ProjectsData = [
     imgAlt: "restaurant website",
     title: "Restaurant App",
     info: "Restaurant website for a client",
-    liveUrl: "https://kancona.netlify.app/",
+    liveUrl: "https://kancona.mk",
   },
   {
     imgName: "beauty.png",
@@ -86,7 +86,8 @@ const ProjectsData = [
     imgName: "elements.png",
     imgAlt: "igor utility page",
     title: "Elements & Small Projects",
-    info: "Collection of elements and small projects with HTML5/CSS3, JavaScript and React",
+    info:
+      "Collection of elements and small projects with HTML5/CSS3, JavaScript and React",
     liveUrl: "https://igor-utility.netlify.app/",
   },
 ];
@@ -103,7 +104,7 @@ const Projects = () => {
               width: "90%",
               margin: "1rem auto",
               border: "1px dotted #00C3C3",
-              opacity: "0.5"
+              opacity: "0.5",
             }}
           />
         </>
