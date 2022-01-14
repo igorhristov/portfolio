@@ -49,38 +49,32 @@ const ProjectsData = [
     imgName: "react.png",
     imgAlt: "react project",
     title: "react app",
-    info: "React Application with node js and express Rest full API",
+    info: "React blog app with create-react-app with node js and express Rest full API and Bootstrap for styling",
     liveUrl: "https://react-blog-igor.herokuapp.com/",
   },
   {
     imgName: "kancona.jpg",
     imgAlt: "restaurant website",
     title: "Restaurant App",
-    info: "Restaurant website for a client",
+    info:
+      "Restaurant website for a client made with Gatsby js and contentful cms and React Bootstrap for styling ",
     liveUrl: "https://kancona.mk",
   },
   {
-    imgName: "beauty.png",
-    imgAlt: "beauty website",
-    title: "Beauty App",
-    info: "Beauty Salon website for a client",
-    liveUrl: "https://ritual.mk/",
+    imgName: "my-new-home.jpg",
+    imgAlt: "Real estate Website",
+    title: "Real Estate Website",
+    info:
+      "I am currently working on. NextJs Contentful CMS as Database and using Chakra ui for styling",
+    liveUrl: "https://my-new-home.vercel.app/",
   },
   {
-    imgName: "psdtohtml.png",
-    imgAlt: "psd to html project",
-    title: "PSD to HTML Page",
-    info: "Convert psd file to html web page with corensponding css styles",
-    liveUrl: "https://igor-psd-to-html.netlify.app/",
-    codeUrl: "https://github.com/igorhristov/homework-7",
-  },
-
-  {
-    imgName: "tribute.jpg",
-    imgAlt: "george lucas tribute page",
-    title: "Tribute Page",
-    info: "Tribute Page for George Lucas made with my own design",
-    liveUrl: "https://igor-tribute-page.netlify.app/",
+    imgName: "shopping-cart.jpg",
+    imgAlt: "Shopping Cart",
+    title: "Shopping Cart",
+    info:
+      "Website test with create-react-app with class components React Redux for state management and css modules for styling",
+    liveUrl: "https://igor-cart.netlify.app/",
   },
   {
     imgName: "elements.png",
@@ -90,6 +84,62 @@ const ProjectsData = [
       "Collection of elements and small projects with HTML5/CSS3, JavaScript and React",
     liveUrl: "https://igor-utility.netlify.app/",
   },
+  {
+    imgName: "beauty.png",
+    imgAlt: "beauty website",
+    title: "Beauty App",
+    info: "Beauty Salon website for a client",
+    liveUrl: "https://ritual.mk/",
+  },
+  {
+    imgName: "spacex.jpg",
+    imgAlt: "Spacex",
+    title: "SpaceX Appolo AntD App",
+    info:
+      "Website with NextJs and testing Appolo with graphql and Ant Design",
+    liveUrl: "https://spacex-igor.netlify.app/",
+  },
+  {
+    imgName: "psdtohtml.png",
+    imgAlt: "psd to html project",
+    title: "PSD to HTML Page",
+    info: "Convert psd file to html web page with corensponding css styles",
+    liveUrl: "https://igor-psd-to-html.netlify.app/",
+    codeUrl: "https://github.com/igorhristov/homework-7",
+  },
+  {
+    imgName: "tribute.jpg",
+    imgAlt: "george lucas tribute page",
+    title: "Tribute Page",
+    info: "Tribute Page for George Lucas made with my own design",
+    liveUrl: "https://igor-tribute-page.netlify.app/",
+  },
+  {
+    imgName: "landing-bem.jpg",
+    imgAlt: "Landing",
+    title: "Landing Page",
+    info:
+      "Html Css website with methodology BEM",
+    liveUrl: "https://igor-landing-page.netlify.app/",
+  },
+  {
+    imgName: "nexter.jpg",
+    imgAlt: "nexter",
+    title: "Real Estate Page with Css Grid",
+    info:
+      "Html Css website with full Grid",
+    liveUrl: "https://igor-nexter.netlify.app/",
+  },
+  {
+    imgName: "hotels.jpg",
+    imgAlt: "hotels",
+    title: "Web Page Css Flex",
+    info:
+      "Html Css website with Flex",
+    liveUrl: "https://igor-flex-hotel.netlify.app/",
+  }
+  
+  
 ];
 
 const Projects = () => {
