@@ -8,6 +8,7 @@ import {
   FaLaptopCode
 } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
+import { SiNextDotJs } from "react-icons/si";
 
 export default [
   {
@@ -43,9 +44,9 @@ export default [
   },
 
   {
-    icon: <FaLaptopCode />,
-    title: "Web App Development",
+    icon: <SiNextDotJs />,
+    title: "NextJS App Development",
     text:
-      "Use all the blessings of modern web technology to achieve your goals easier and more efficiently. Web App Development is here to level up your business.",
+      "Are you Looking for a NextJS Developer? You can hire me as a Freelance NextJS Developer. NextJS can be a great choice for your web application. Server-side rendering and static site generation are not only good for SEO but also to improve perceived loading times. And if required, you can also decide to render parts or your entire application only on the client. NextJS is also ready for PWAs out of the box.",
   },
 ];

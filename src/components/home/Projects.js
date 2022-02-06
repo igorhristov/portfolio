@@ -46,12 +46,22 @@ const SingleProject = ({ imgName, imgAlt, title, info, liveUrl, codeUrl }) => {
 
 const ProjectsData = [
   {
-    imgName: "react.png",
-    imgAlt: "react project",
-    title: "react app",
-    info: "React blog app with create-react-app with node js and express Rest full API and Bootstrap for styling",
-    liveUrl: "https://react-blog-igor.herokuapp.com/",
+    imgName: "ngo.jpg",
+    imgAlt: "Next ngo project",
+    title: "NextJs TailwindCss Ngo website",
+    info:
+      "Website about Ngo made with NextJs with Typescript and Typescript all data is at GraphCMS and is fetching with graphql",
+    liveUrl: "https://ngo-nine.vercel.app/",
   },
+  {
+    imgName: "my-new-home.jpg",
+    imgAlt: "Real estate Website",
+    title: "Real Estate Website",
+    info:
+      "I am currently working on. NextJs Contentful CMS as Database and using Chakra ui for styling",
+    liveUrl: "https://my-new-home.vercel.app/",
+  },
+
   {
     imgName: "kancona.jpg",
     imgAlt: "restaurant website",
@@ -61,12 +71,12 @@ const ProjectsData = [
     liveUrl: "https://kancona.mk",
   },
   {
-    imgName: "my-new-home.jpg",
-    imgAlt: "Real estate Website",
-    title: "Real Estate Website",
+    imgName: "react.png",
+    imgAlt: "react project",
+    title: "react app",
     info:
-      "I am currently working on. NextJs Contentful CMS as Database and using Chakra ui for styling",
-    liveUrl: "https://my-new-home.vercel.app/",
+      "React blog app with create-react-app with node js and express Rest full API and Bootstrap for styling",
+    liveUrl: "https://react-blog-igor.herokuapp.com/",
   },
   {
     imgName: "shopping-cart.jpg",
@@ -95,8 +105,7 @@ const ProjectsData = [
     imgName: "spacex.jpg",
     imgAlt: "Spacex",
     title: "SpaceX Appolo AntD App",
-    info:
-      "Website with NextJs and testing Appolo with graphql and Ant Design",
+    info: "Website with NextJs and testing Appolo with graphql and Ant Design",
     liveUrl: "https://spacex-igor.netlify.app/",
   },
   {
@@ -118,28 +127,23 @@ const ProjectsData = [
     imgName: "landing-bem.jpg",
     imgAlt: "Landing",
     title: "Landing Page",
-    info:
-      "Html Css website with methodology BEM",
+    info: "Html Css website with methodology BEM",
     liveUrl: "https://igor-landing-page.netlify.app/",
   },
   {
     imgName: "nexter.jpg",
     imgAlt: "nexter",
     title: "Real Estate Page with Css Grid",
-    info:
-      "Html Css website with full Grid",
+    info: "Html Css website with full Grid",
     liveUrl: "https://igor-nexter.netlify.app/",
   },
   {
     imgName: "hotels.jpg",
     imgAlt: "hotels",
     title: "Web Page Css Flex",
-    info:
-      "Html Css website with Flex",
+    info: "Html Css website with Flex",
     liveUrl: "https://igor-flex-hotel.netlify.app/",
-  }
-  
-  
+  },
 ];
 
 const Projects = () => {
